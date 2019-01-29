@@ -17,7 +17,7 @@ for k=2:length(dataset)
 end
 
 
-% 
+% TODO: recursion versio 
 % function S_k = Sfunction(k, dataset)
 % if k==1
 %     S_k = 0;
