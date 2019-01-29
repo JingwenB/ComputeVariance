@@ -1,0 +1,16 @@
+function variance = sumOfSquares(dataset)
+x_count = numel(dataset,':',':');
+x_sum_s = sum(dataset);
+x_mean = mean(dataset,x_count);
+disp(x_count);
+for i = 1:length(dataset)
+    x=dataset(i);
+    x_diff = x-x_mean;
+%     disp(x_diff);
+    x_diff_sqr = x_diff^2;
+    x_sum = x_sum + x_diff_sqr;
+end
+variance = x_sum /(x_count - 1);
+disp(x_sum);
+disp(x_count-1);
+disp(variance);
